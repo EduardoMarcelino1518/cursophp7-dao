@@ -8,6 +8,12 @@ if(file_exists(($filename))) {
 	require_once($filename);
 }
 
+$filename1 = "class".DIRECTORY_SEPARATOR."Usuario.php";
+
+if(file_exists(($filename1))) {
+	require_once($filename1);
+}
+
 });
 
 ?>
