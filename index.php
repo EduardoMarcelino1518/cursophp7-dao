@@ -60,12 +60,23 @@ $aluno->insert();
 
 echo $aluno; COMENTEI TODO MEU TRECHO DE INSERT PARA NÃO HAVER INSERT AUTOMATICO TODA VEZ QUE CARREGO MINHA PAGINA */
 
-$update = new Usuario();
+// Alterar um usuario //
+
+
+/*$update = new Usuario();
 
 $update->loadById(8);
 
 $update->update("professor", "!@#$%¨&*");
 
-echo $update;
+echo $update;*/
+
+$usuario = new Usuario();
+
+$usuario->loadById(7);
+
+$usuario->delete();
+
+echo $usuario;
 
 ?>
