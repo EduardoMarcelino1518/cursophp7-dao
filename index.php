@@ -33,10 +33,39 @@ echo "<br>";
 
 //Carrega um usuário ussando o login e a senha
 $usuario = new Usuario();
-$usuario->login("sdaf","asfdas"); // exemplo de login errado
+//$usuario->login("sdaf","asfdas"); // exemplo de login errado
 $usuario->login("root","@#$!");
 
 
 echo $usuario;
+echo "<br>";
+echo "<br>";
+
+//Insert de um novo usuario 
+
+/*$aluno = new Usuario();
+
+$aluno->setDeslogin("aluno");
+$aluno->setDessenha("@aluno");
+
+$aluno->insert();
+
+echo $aluno;*/
+
+// Insert de um novo usuario com método construtor //
+
+/*$aluno = new Usuario("aluno", "@aluno");
+
+$aluno->insert();
+
+echo $aluno; COMENTEI TODO MEU TRECHO DE INSERT PARA NÃO HAVER INSERT AUTOMATICO TODA VEZ QUE CARREGO MINHA PAGINA */
+
+$update = new Usuario();
+
+$update->loadById(8);
+
+$update->update("professor", "!@#$%¨&*");
+
+echo $update;
 
 ?>
